@@ -45,21 +45,10 @@ int main()
 	string expr1 = "()";
 	string expr2 = "()[]{}";
 	string expr3 = "(]";
+	cout << std::boolalpha << CheckParanthesis(expr1) << endl;
+	cout << std::boolalpha << CheckParanthesis(expr2) << endl;
+	cout << std::boolalpha << CheckParanthesis(expr3) << endl;
 
-	if (CheckParanthesis(expr1))
-		cout << "TRUE" << endl;
-	else
-		cout << "FALSE" << endl;
-	
-	if (CheckParanthesis(expr2))
-		cout << "TRUE" << endl;
-	else
-		cout << "FALSE" << endl;
-
-	if (CheckParanthesis(expr3))
-		cout << "TRUE" << endl;
-	else
-		cout << "FALSE" << endl;
 	
 	system("pause");
 }

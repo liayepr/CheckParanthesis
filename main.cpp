@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool CheckParanthesis(string expr)
+bool CheckParanthesis(string const& expr)
 {
 	stack<char> s;
 	char temp;
@@ -13,7 +13,7 @@ bool CheckParanthesis(string expr)
 	{
 		if (expr[i] == '(' || expr[i] == '[' || expr[i] == '{')
 		{
-		    s.push(expr[i]);  	// Push the element in the stack 
+			s.push(expr[i]);  	// Push the element in the stack 
 			continue;
 		}
 
@@ -36,7 +36,7 @@ bool CheckParanthesis(string expr)
 		}
 	};
 
-	
+
 	return (s.empty());
 }
 
@@ -49,6 +49,6 @@ int main()
 	cout << std::boolalpha << CheckParanthesis(expr2) << endl;
 	cout << std::boolalpha << CheckParanthesis(expr3) << endl;
 
-	
+
 	system("pause");
 }
